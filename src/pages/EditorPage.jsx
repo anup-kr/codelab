@@ -46,7 +46,6 @@ function EditorPage() {
 				username: location.state?.username,
 			});
 			socketRef.current.on(ACTIONS.JOINED, ({ username, socketId, clients }) => {
-				console.log(socketId, socketRef.current.id);
 				if(username !== location.state?.username) {
 					toast.success(`${username} joined the room.`);
 					console.log(`${username} joined`)

@@ -25,7 +25,6 @@ const Editor = ({ socketRef, onCodeChange }) => {
 			});
 
 			editorRef.current.on('change', ( instance, changes ) => {
-				console.log(changes);
 				const { origin } = changes;
 				const code = instance.getValue();
 				onCodeChange(code);
