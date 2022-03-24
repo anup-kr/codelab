@@ -1,38 +1,97 @@
-.App {
-  text-align: center;
+.homePageWrapper {
+  display: flex;
+  height: 100vh;
+  width: 100vw;
+  justify-content: center;
+  align-items: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.formWrapper {
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  background-color: rgb(9, 50, 70);
+  border-radius: 1rem;
+  padding: 1rem 2rem 2rem 2rem;
+  margin-top: -10%;
+  max-width: 90%;
+}
+.inputGroup {
+  display: flex;
+  flex-direction: column;
+  width: 18rem;
+}
+input {
+  margin-top: 1rem;
+  height: 1.8rem;
+  border: none;
+  border-radius: 0.4rem;
+  padding-left: 0.6rem;
+  padding-right: 0.6rem;
+  background-color: rgb(192, 192, 192);
+  font-weight: 800;
+
+}
+.btn {
+  margin-top: 1rem;
+  height: 1.8rem;
+  border: none;
+  border-radius: 0.4rem;
+  padding: 0.4rem 1.2rem 0.4rem 1.2rem;
+  cursor: pointer;
+  font-weight: 800;
+  transition: 150ms cubic-bezier(0.1, 0.2, 0.3, 0.4);
+}
+.joinBtn {
+  background-color: rgb(53, 250, 250);
+  float: right;
 }
 
-.App-link {
-  color: #61dafb;
+span {
+  margin-top: 1rem;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+footer {
+  position: fixed;
+  bottom: 0;
+}
+
+.editorPageWrapper {
+  display: flex;
+  height: 100vh;
+  width: 100vw;
+}
+.sidebar {
+  width: 240px;
+  margin-left: 0.4rem;
+  border-right: 1px solid rgba(119, 119, 119, 0.2);
+}
+
+.client {
+  margin-top: 0.4rem;
+}
+.clientInfo {
+  color: #fff;
+  margin-left: 0.4rem;
+}
+.btnGroup {
+  display: flex;
+  flex-direction: column;
+}
+.btnLeaveRoom {
+  background-color: rgb(245, 8, 55);
+  color: #fff;
+}
+.btnLeaveRoom:hover {
+  background-color: rgb(201, 30, 64);
+}
+.editorWrapper {
+  width: 100%;
+  height: 100%;
+}
+.CodeMirror {
+  min-height: 100vh;
+  font-size: 18px;
+  padding-top: 0.6rem;
+  line-height:1.6rem;
 }
