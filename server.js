@@ -45,8 +45,6 @@ io.on('connection', (socket) => {
         socket.to(roomId).emit(ACTIONS.CODE_CHANGE, { code });
     });
     socket.on(ACTIONS.CODE_SYNC, ({ socketId, code }) => {
-        console.log("I am in server code_sync section.")
-        console.log(code);
         io.to(socketId).emit(ACTIONS.CODE_CHANGE, { code });
     })
 
